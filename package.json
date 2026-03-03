@@ -3,30 +3,29 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "ts-node src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "@langchain/core": "^1.1.29",
-    "@langchain/google-genai": "^2.1.22",
-    "@langchain/ollama": "^1.2.5",
-    "@qdrant/js-client-rest": "^1.17.0",
+    "@langchain/community": "^0.0.57",
+    "@langchain/google-genai": "^0.0.12",
+    "@langchain/ollama": "^0.0.4",
+    "@qdrant/js-client-rest": "^1.8.0",
     "axios": "^1.13.6",
     "cors": "^2.8.6",
     "dotenv": "^17.3.1",
     "express": "^5.2.1",
-    "ioredis": "^5.10.0",
-    "langchain": "^1.2.28",
-    "openai": "^6.25.0",
+    "langchain": "^0.1.37",
     "pg": "^8.19.0",
     "uuid": "^13.0.0",
-    "zod": "^4.3.6"
+    "zod": "^3.25.76"
   },
   "devDependencies": {
-    "@types/node": "^25.3.3",
     "nodemon": "^3.1.14",
     "ts-node": "^10.9.2",
     "typescript": "^5.9.3"
